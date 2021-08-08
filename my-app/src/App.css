@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Courier New", Courier, monospace;
+  background: #f4f4f4;
+}
+
+.todo-list {
+  flex: 70%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-content h1 {
+  color: palevioletred;
+  font-family: "Courier New", Courier, monospace;
+  padding-top: 50px;
+}
+
+.todo-list h1::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  margin-top: 5px;
+  background: cadetblue;
+}
+
+.title-content p {
+  font-family: "Courier New", Courier, monospace;
+  padding-top: 20px;
+  color: cadetblue;
+  font-weight: bold;
+}
+
+input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 10px;
+  background-color: #fff;
+  outline: none;
+  height: 50px;
+  width: 350px;
+  border: none;
+  margin: 10px auto;
+  padding: 5px;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 10px;
+
+  color: #666666;
+}
+
+input:hover {
+  color: #808080;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  height: 40px;
+  width: 70px;
+  background: cadetblue;
+  box-shadow: none;
+  border-radius: 10px;
+  border: 1px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+button:focus {
+  outline: none;
+}
+
+.btn:hover {
+  color: whitesmoke;
+  background: palevioletred;
+}
+
+ul {
+  background-color: rgba(216, 112, 147, 0.664);
+  margin: 0;
+  padding-top: 16px;
+  width: calc(100vw - 100px);
+  border-radius: 10px;
+}
+
+li {
+  margin-bottom: 8px;
+}
